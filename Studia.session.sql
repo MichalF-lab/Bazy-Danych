@@ -5,21 +5,21 @@ SELECT COUNT(emp_no)
 FROM employees.employees;
 
 SELECT COUNT(EmployeeID)
-FROM nortwind.Employees;
+FROM northwind.Employees;
 
 SELECT COUNT(customer_id)
 FROM sakila.customer;
 
 SELECT COUNT(CustomerID)
-FROM nortwind.Customers;
+FROM northwind.Customers;
 
 SELECT COUNT(EmployeeID)
-FROM nortwind.Employees
-WHERE birth_date LIKE "%-01-16"
+FROM northwind.Employees
+WHERE BirthDate LIKE "%-01-16";
 
 SELECT COUNT(emp_no)
 FROM employees.employees
-WHERE birth_date LIKE "%-01-16"
+WHERE birth_date LIKE "%-01-16";
 
 SELECT city_id, city, country_id
 FROM sakila.city
@@ -42,11 +42,11 @@ WHERE first_name LIKE "JULIA";
 
 SELECT COUNT(city_id)
 FROM sakila.city
-WHERE country_id = 76
+WHERE country_id = 76;
 
-SELECT territory_id
-FROM nortwind.Territories
-WHERE territoryDescription LIKE "Seattle";
+SELECT TerritoryID
+FROM northwind.Territories
+WHERE TerritoryDescription = "Seattle";
 
 SELECT COUNT(emp_no)
 FROM employees.employees;
