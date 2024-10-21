@@ -47,3 +47,37 @@ WHERE description LIKE '% SUMO %';
 
 -- Zad 5
 
+
+-- Zad 17
+SELECT email, COUNT(customer_id)
+FROM sakila.customer
+WHERE NOT email LIKE "%sakilacustomer.org"
+GROUP BY email;
+
+-- Zad 18
+SELECT count(customer_id), store_id, active
+FROM sakila.customer
+GROUP BY sakila.customer.active, store_id;
+
+-- Zad 20
+
+
+SELECT phone
+FROM sakila.address
+WHERE address_id = (
+SELECT address_id
+FROM sakila.customer
+WHERE sakila.customer.customer_id = (SELECT customer_id
+   FROM rental
+   WHERE rental_date LIKE (
+      SELECT MIN(rental_date) 
+      FROM rental
+      WHERE return_date IS NULL
+   ))
+   );
+
+
+SELECT title, COUNT(emp_no)
+FROM employees.titles
+GROUP BY title   
+   
