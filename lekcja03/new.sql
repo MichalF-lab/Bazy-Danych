@@ -26,16 +26,23 @@ HAVING COUNT(DISTINCT district) > 1
 ORDER BY city_id DESC;
 
 #Zad 5
-SELECT staff_id, SUM(amount), SUM(amount)/COUNT(staff_id)
+SELECT staff_id, SUM(amount), amount
 FROM payment
-GROUP BY staff_id;
+GROUP BY staff_id, amount
+ORDER BY amount DESC;
 
 #Zad 6
 SELECT MAX(return_date - rental_date) / 216000, MIN(return_date - rental_date)/ 216000
-FROM rental
+FROM rental;
 
 #Zad 7
-SELECT customer_id, AVG(return_date - rental_date) / 216000 AS xd
+SELECT customer_id, (AVG(return_date - rental_date) / 86400) AS Days
 FROM rental
-ORDER BY xd DESC
-LIMIT 1
+ORDER BY Days DESC
+LIMIT 1;
+
+#Zad 8
+SELECT customer_id, (SUM(return_date - rental_date) / 31536000) AS Year
+FROM rental
+ORDER BY Year
+LIMIT 1;
