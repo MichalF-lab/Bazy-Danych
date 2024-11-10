@@ -60,8 +60,6 @@ FROM sakila.customer
 GROUP BY sakila.customer.active, store_id;
 
 -- Zad 20
-
-
 SELECT phone
 FROM sakila.address
 WHERE address_id = (

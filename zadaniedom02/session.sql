@@ -1,5 +1,9 @@
--- Wyswietlic fimlmy bez jezyka angielskiego
+-- W tym tygodniu zadanie domowe polega na tym, że każdy wymyśla sobie 
+-- dwa zadania do rozwiązania, dotyczące danych z bazy sakila. 
+-- Pierwsze zadanie ma być łatwe, wymagające połączenia tylko dwóch tabel. 
+-- Drugie ma łączyć co najmniej trzy tabele.
 
+-- Wyswietlic fimlmy bez jezyka angielskiego
 SELECT title, name
 FROM film
 JOIN language USING(language_id)
