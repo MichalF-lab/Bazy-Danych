@@ -20,8 +20,12 @@ JOIN sakila.rental using(customer_id)
 JOIN sakila.inventory using(inventory_id)
 WHERE film_id = 2
 
-
-DELETE FROM piaskownica.film_275951
+DELETE piaskownica.film_275951
+FROM piaskownica.film_275951
 JOIN sakila.film_category using(film_id)
 JOIN sakila.category using(category_id)
 WHERE name = "Drama"
+
+SELECT * FROM sakila.film_actor WHERE actor_id IN
+(SELECT actor_id, COUNT(film_id) FROM sakila.film_actor
+GROUP BY actor_id)
