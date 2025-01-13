@@ -13,6 +13,21 @@
             "database": "sakila",
             "username": "student",
             "password": "57u>3n7"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "projektdv.mysql.database.azure.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "projektsem3",
+            "database": "projekt",
+            "username": "micmat",
+            "password": "qwertyuiop1!Q",
+            "group": "groub"
         }
     ]
 }
