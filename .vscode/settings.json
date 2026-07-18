@@ -11,8 +11,7 @@
             "driver": "MariaDB",
             "name": "Studia",
             "database": "sakila",
-            "username": "student",
-            "password": "57u>3n7"
+            "username": "student"
         },
         {
             "mysqlOptions": {
@@ -26,7 +25,6 @@
             "name": "projektsem3",
             "database": "projekt",
             "username": "micmat",
-            "password": "qwertyuiop1!Q",
             "group": "groub"
         }
     ]
