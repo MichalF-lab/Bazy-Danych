@@ -13,9 +13,14 @@ Skrypty SQL i materiały z kolejnych zajęć — kwerendy na przykładowych baza
 
 | Folder | Zawartość |
 |---|---|
-| `lekcja-01`–`lekcja-04`, `lekcja-07` | Materiały i zadania z kolejnych zajęć (skrypty SQL, treści zadań w PDF) |
-| `zadaniedom01`, `zadaniedom02` | Zadania domowe |
-| `projekt/` | Projekt zaliczeniowy (SQL + skrypty Python) |
+| `lekcja-01/` | `COUNT`/`WHERE` — porównanie baz `sakila`, `employees`, `northwind` |
+| `lekcja-02/` | Zapytania o filmy + podzapytania na bazie `sakila` |
+| `lekcja-03/` | Agregacje i grupowanie (`COUNT`/`SUM`/`GROUP_CONCAT`/`HAVING`) na `sakila` |
+| `lekcja-04/` | Złączenia (`JOIN`) tabel `sakila` (personel, klienci, adresy, filmy, wypożyczenia, płatności) |
+| `lekcja-07/` | Piaskownica: `CREATE`/`DROP TABLE`, kopiowanie danych, podzapytania |
+| `zadaniedom01/`, `zadaniedom02/` | Dopasowanie wzorców i agregacje na `sakila`; filmy nieanglojęzyczne i liczba kopii w kategoriach |
+| `projekt/` | Projekt zaliczeniowy: schemat bazy rezerwacji wydarzeń (`schemat_bazy_rezerwacji_wydarzen.sql`) + generator danych testowych w Pythonie (Faker) zasilający bazę Azure MySQL |
+| *(root)* | `agregacje_i_wzorce_sakila.sql` — dodatkowe zapytania na `sakila`; `diagram_erd_bazy_sakila.png` — diagram ERD bazy `sakila` |
 
 ## 🛠️ Technologie
 
